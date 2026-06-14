@@ -1,0 +1,11 @@
+{
+  "lastChecks": {
+    "daily_search": null,
+    "weather": null,
+    "last_report_date": null
+  },
+  "preferences": {
+    "report_targets": ["+56931265632", "+56982526104"],
+    "channel": "whatsapp"
+  }
+}
