@@ -1,6 +1,6 @@
 # Lista de Invitados 👥
 
-| Nombre | Lado | Confirmado | Adultos | Niños | Notas |
+| Nombre | Lado | Status | Adultos | Niños | Notas |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| Jorge | Novio | Sí | 1 | 0 | El jefe |
-| Katty | Novia | Sí | 1 | 0 | La jefa |
+| Jorge | Novio | Confirmado | 1 | 0 | El jefe |
+| Katty | Novia | Confirmado | 1 | 0 | La jefa |
