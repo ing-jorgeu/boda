@@ -2,9 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=admin.html">
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
     <script type="text/javascript">
-        window.location.href = "admin.html"
+        // Redirige añadiendo un timestamp para romper el caché
+        window.location.href = "admin.html?v=" + new Date().getTime();
     </script>
     <title>Redireccionando...</title>
 </head>
