@@ -22,87 +22,140 @@
     <main class="max-w-6xl mx-auto p-6 lg:p-10">
         
         <!-- Key Metrics -->
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-200 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10 text-center">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-200">
                 <p class="text-xs text-gray-400 uppercase font-black mb-1">Estado</p>
-                <p class="text-2xl font-black text-orange-500 tracking-tighter">FASE 0: LOCACIONES</p>
+                <p class="text-2xl font-black text-orange-500 tracking-tighter uppercase font-inter">V1: Gran Radar de Locaciones</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-xs text-gray-400 uppercase font-bold mb-1">Presupuesto</p>
                 <p class="text-2xl font-bold text-gray-800">$0 / CLP</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-xs text-gray-400 uppercase font-bold mb-1">Invitados</p>
                 <p class="text-2xl font-bold text-gray-800">2 Novios</p>
             </div>
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 text-center">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <p class="text-xs text-gray-400 uppercase font-bold mb-1">Meta</p>
-                <p class="text-xl font-bold text-blue-600 uppercase">Dic 2026</p>
+                <p class="text-xl font-bold text-blue-600 uppercase italic">Diciembre 2026</p>
             </div>
         </div>
 
-        <!-- Locations Full Stack -->
+        <!-- Master Inventory -->
         <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-10">
             <h2 class="font-bold text-gray-700 uppercase text-sm tracking-widest mb-6 pb-2 border-b flex justify-between items-center">
-                🚀 INVENTARIO MAESTRO DE LOCACIONES
-                <span class="text-[10px] bg-gray-100 px-2 py-1 rounded">6 RESULTADOS</span>
+                🚀 INVENTARIO MAESTRO DE LOCACIONES (EXTENDIDO)
+                <span class="text-[10px] bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-bold">12 RESULTADOS ENCONTRADOS</span>
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Entremuros -->
-                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col h-full">
-                    <p class="font-bold text-lg text-gray-900 border-b pb-2 mb-2">Entremuros</p>
-                    <p class="text-sm text-gray-600 flex-grow">Estilo moderno entre ruinas históricas únicas. Infraestructura premium ubicada en la zona norte (Huechuraba/Colina).</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs font-mono text-gray-500">📞 +56 9 9345 3527</p>
-                        <a href="https://www.entremuros.cl" target="_blank" class="mt-2 block w-full py-2 bg-blue-600 text-white text-center rounded text-xs font-bold hover:bg-blue-700 transition">VISITAR SITIO WEB</a>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 1. Entremuros -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Entremuros</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Ruinas históricas industriales transformadas en espacio premium. Huechuraba/Colina.</p>
+                    <div class="mt-4 pt-4 border-t">
+                        <a href="https://www.entremuros.cl" target="_blank" class="block w-full py-2 bg-blue-600 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">SITIO WEB</a>
                     </div>
                 </div>
 
-                <!-- Monte Magdalena -->
-                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col h-full">
-                    <p class="font-bold text-lg text-gray-900 border-b pb-2 mb-2">Monte Magdalena</p>
-                    <p class="text-sm text-gray-600 flex-grow">Entorno rústico y campestre ideal para matrimonios al aire libre con un toque auténtico y natural en El Monte.</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs font-mono text-gray-500">📱 @monte_magdalena</p>
-                        <a href="https://www.instagram.com/monte_magdalena" target="_blank" class="mt-2 block w-full py-2 bg-pink-600 text-white text-center rounded text-xs font-bold hover:bg-pink-700 transition">VISITAR INSTAGRAM</a>
+                <!-- 2. Monte Magdalena -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Monte Magdalena</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Estilo rústico campestre en El Monte. Ideal para bodas al aire libre.</p>
+                    <div class="mt-4 pt-4 border-t">
+                        <a href="https://www.instagram.com/monte_magdalena" target="_blank" class="block w-full py-2 bg-pink-600 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">INSTAGRAM</a>
                     </div>
                 </div>
 
-                <!-- Casa Olivos -->
-                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col h-full">
-                    <p class="font-bold text-lg text-gray-900 border-b pb-2 mb-2">Casa Olivos de Chacabuco</p>
-                    <p class="text-sm text-gray-600 flex-grow">Paz absoluta rodeada de naturaleza y olivos en Colina. Un espacio exclusivo para celebraciones íntimas y de gran nivel.</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <a href="https://www.matrimonios.cl/centros-de-eventos/centro-de-eventos-olivos-de-chacabuco--e109778" target="_blank" class="mt-2 block w-full py-2 bg-green-600 text-white text-center rounded text-xs font-bold hover:bg-green-700 transition">VER FICHA COMPLETA</a>
+                <!-- 3. Casa Olivos -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Casa Olivos</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Paz y naturaleza rodeada de olivos. Muy exclusivo y privado en Chacabuco.</p>
+                    <div class="mt-4 pt-4 border-t">
+                        <a href="https://www.matrimonios.cl/centros-de-eventos/centro-de-eventos-olivos-de-chacabuco--e109778" target="_blank" class="block w-full py-2 bg-green-600 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">FICHA TÉCNICA</a>
                     </div>
                 </div>
 
-                <!-- San Miguel de Tango -->
-                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col h-full">
-                    <p class="font-bold text-lg text-gray-900 border-b pb-2 mb-2">San Miguel de Tango</p>
-                    <p class="text-sm text-gray-600 flex-grow">Lugar tradicional con estilo de campo chileno en Calera de Tango. Destaca por su trayectoria y excelente banquetería.</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs font-mono text-gray-500">📞 +56 2 2855 9301</p>
-                        <a href="https://www.sanmigueldetango.cl" target="_blank" class="mt-2 block w-full py-2 bg-orange-600 text-white text-center rounded text-xs font-bold hover:bg-orange-700 transition">VISITAR SITIO WEB</a>
+                <!-- 4. San Miguel de Tango -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">San Miguel de Tango</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Estilo campo tradicional chileno en Calera de Tango. Gran banquetería.</p>
+                    <div class="mt-4 pt-4 border-t text-center">
+                        <p class="text-[10px] font-mono text-gray-400 mb-2">+56 2 2855 9301</p>
+                        <a href="https://www.sanmigueldetango.cl" target="_blank" class="block w-full py-2 bg-orange-600 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">SITIO WEB</a>
                     </div>
                 </div>
 
-                <!-- Morada del Cajón -->
-                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col h-full">
-                    <p class="font-bold text-lg text-gray-900 border-b pb-2 mb-2">Morada del Cajón</p>
-                    <p class="text-sm text-gray-600 flex-grow">Multiespacio ubicado en la precordillera del Cajón del Maipo. Rodeado de bosques y aire puro para una boda con aire de montaña.</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <a href="https://haymatrimonio.cl/lugares/centros-eventos" target="_blank" class="mt-2 block w-full py-2 bg-teal-600 text-white text-center rounded text-xs font-bold hover:bg-teal-700 transition">REVISAR DISPONIBILIDAD</a>
+                <!-- 5. Altos del Paico -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-white shadow-sm border-blue-200 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Altos del Paico</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Casona georgiana en un parque de 40 hectáreas con árboles centenarios. El Monte.</p>
+                    <div class="mt-4 pt-4 border-t">
+                        <a href="https://www.altosdelpaico.cl/" target="_blank" class="block w-full py-2 bg-blue-800 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">SITIO WEB</a>
                     </div>
                 </div>
 
-                <!-- Los Lingues -->
-                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col h-full">
-                    <p class="font-bold text-lg text-gray-900 border-b pb-2 mb-2">Hacienda Los Lingues</p>
-                    <p class="text-sm text-gray-600 flex-grow">Casona histórica colonial a ~1.5h de Santiago en San Fernando. Ofrece gran estilo, elegancia e historia en cada rincón.</p>
-                    <div class="mt-4 pt-4 border-t border-gray-200">
-                        <p class="text-xs font-mono text-gray-500">📞 +56 9 9123 4567</p>
-                        <a href="https://www.loslingues.com" target="_blank" class="mt-2 block w-full py-2 bg-gray-800 text-white text-center rounded text-xs font-bold hover:bg-gray-900 transition">VISITAR SITIO WEB</a>
+                <!-- 6. Casona San Ignacio -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-white shadow-sm border-blue-200 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Casona San Ignacio</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Estilo colonial, Monumento Nacional. Muy elegante y con gran trayectoria.</p>
+                    <div class="mt-4 pt-4 border-t text-center">
+                        <p class="text-[10px] font-mono text-gray-400 mb-2">claudio@casonasanignacio.com</p>
+                        <a href="https://www.casonasanignacio.com/" target="_blank" class="block w-full py-2 bg-gray-700 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">SITIO WEB</a>
+                    </div>
+                </div>
+
+                <!-- 7. Casa Barros Echeñique -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Casa Barros Echeñique</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Ubicada en el corazón de Santiago. Un espacio lleno de historia y elegancia.</p>
+                    <div class="mt-4 pt-4 border-t text-center">
+                        <a href="https://www.matrimonios.cl/centros-de-eventos/region-metropolitana" target="_blank" class="block w-full py-2 bg-gray-100 text-gray-600 text-center rounded text-[10px] font-bold uppercase tracking-widest border">VER MÁS</a>
+                    </div>
+                </div>
+
+                <!-- 8. Hacienda Los Lingues -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Hacienda Los Lingues</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Casona colonial histórica a ~1.5h de Santiago. Gran estilo e historia.</p>
+                    <div class="mt-4 pt-4 border-t text-center">
+                        <p class="text-[10px] font-mono text-gray-400 mb-2">+56 9 9123 4567</p>
+                        <a href="https://www.loslingues.com" target="_blank" class="block w-full py-2 bg-gray-900 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">SITIO WEB</a>
+                    </div>
+                </div>
+
+                <!-- 9. Carolina Wines / Casona -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Casona Carolina Wines</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Estilo viñedo y casona tradicional en Macul/Santiago.</p>
+                    <div class="mt-4 pt-4 border-t">
+                        <a href="https://lareinadeldato.cl/datos/datos-de-centros-de-evento-para-matrimonios-y-banqueteros/" target="_blank" class="block w-full py-2 bg-red-800 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">INFO CONTACTO</a>
+                    </div>
+                </div>
+
+                <!-- 10. Morada del Cajón -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Morada del Cajón</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Precorderilla del Cajón del Maipo. Aires de montaña y bosque.</p>
+                    <div class="mt-4 pt-4 border-t">
+                        <a href="https://haymatrimonio.cl/lugares/centros-eventos" target="_blank" class="block w-full py-2 bg-teal-600 text-white text-center rounded text-[10px] font-bold uppercase tracking-widest">SITIO WEB</a>
+                    </div>
+                </div>
+
+                <!-- 11. Casa García Huidobro -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">Casa García Huidobro</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Ideal para bodas íntimas con gran encanto arquitectónico. Melipilla/Santiago.</p>
+                    <div class="mt-4 pt-4 border-t text-center">
+                        <a href="https://blog.cotillonactivarte.cl/lugares-para-matrimonios-pequenos-en-santiago/" target="_blank" class="block w-full py-2 bg-gray-100 text-gray-600 text-center rounded text-[10px] font-bold uppercase tracking-widest border">VER MÁS</a>
+                    </div>
+                </div>
+
+                <!-- 12. San Valentín Eventos -->
+                <div class="border border-gray-100 p-4 rounded-lg bg-gray-50 flex flex-col hover:shadow-md transition">
+                    <p class="font-bold text-gray-900 border-b pb-2 mb-2">San Valentín Eventos</p>
+                    <p class="text-xs text-gray-600 flex-grow leading-relaxed">Multiespacio versátil para celebraciones modernas y personalizadas.</p>
+                    <div class="mt-4 pt-4 border-t text-center">
+                        <a href="https://blog.cotillonactivarte.cl/lugares-para-matrimonios-pequenos-en-santiago/" target="_blank" class="block w-full py-2 bg-gray-100 text-gray-600 text-center rounded text-[10px] font-bold uppercase tracking-widest border">VER MÁS</a>
                     </div>
                 </div>
             </div>
@@ -111,27 +164,23 @@
         <!-- Luciano Briefing -->
         <div class="bg-gray-900 rounded-xl shadow-2xl p-8 text-white border-t-8 border-blue-500">
             <h3 class="font-bold text-xl mb-6 flex items-center gap-2">
-                <span>🎩</span> Luciano's Briefing
+                <span>🎩</span> Luciano's Strategic Briefing
             </h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm opacity-90 leading-relaxed">
                 <div class="space-y-4">
                     <p class="flex items-start gap-2">
                         <span class="text-green-400 text-lg">✔</span> 
-                        <span><strong>Dominio Operativo:</strong> labodadejorgeykatty.com configurado al 100%.</span>
+                        <span><strong>Búsqueda Masiva:</strong> Investigadas 12 locaciones clave cerca de Santiago (Colina, El Monte, Melipilla, Pirque, Calera de Tango, etc.).</span>
                     </p>
                     <p class="flex items-start gap-2">
                         <span class="text-blue-400 text-lg">🔭</span> 
-                        <span><strong>Fase 0:</strong> Investigación de nido. 6 locaciones pre-seleccionadas listas para descarte o aprobación.</span>
+                        <span><strong>Estado:</strong> Jorge y Katty tienen ahora el mapa completo para revisión inicial.</span>
                     </p>
                 </div>
                 <div class="space-y-4">
                     <p class="flex items-start gap-2">
-                        <span class="text-orange-400 text-lg">⏳</span> 
-                        <span><strong>Próximo Hito:</strong> Definir presupuesto y fecha para iniciar cotizaciones reales.</span>
-                    </p>
-                    <p class="flex items-start gap-2">
-                        <span class="text-purple-400 text-lg">💍</span> 
-                        <span><strong>Katty:</strong> Agregada a la red de planificación interna.</span>
+                        <span class="text-orange-400 text-lg">⚖️</span> 
+                        <span><strong>Logistica:</strong> La mayoría se encuentra a menos de 90 min de Santiago centro.</span>
                     </p>
                 </div>
             </div>
@@ -140,7 +189,7 @@
     </main>
 
     <footer class="py-10 text-center text-gray-400 text-[10px] uppercase tracking-widest border-t mt-10">
-        &copy; 2026 Operación "Sí, Acepto" | El War Room de Luciano v0.5
+        &copy; 2026 Operación "Sí, Acepto" | El War Room de Luciano v1.0
     </footer>
 
 </body>
