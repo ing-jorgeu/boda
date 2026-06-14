@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge & Katty | Boda 🎩💍</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .font-cursive { font-family: 'Dancing Script', cursive; }
+        .bg-wedding { background-color: #fdfaf6; }
+        .text-gold { color: #c5a059; }
+    </style>
+</head>
+<body class="bg-wedding text-gray-800 font-inter">
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col items-center justify-center text-center p-6 border-b-4 border-double border-gold">
+        <h1 class="text-6xl md:text-8xl font-cursive text-gold mb-4">Jorge & Katty</h1>
+        <p class="text-xl md:text-2xl tracking-widest uppercase text-gray-500 mb-8">¡Nos casamos!</p>
+        
+        <div id="countdown" class="flex gap-4 text-center mt-8">
+            <div class="bg-white p-4 rounded-lg shadow-sm border border-gold/20 min-w-[80px]">
+                <span id="days" class="block text-3xl font-bold text-gold">--</span>
+                <span class="text-xs uppercase text-gray-400">Días</span>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm border border-gold/20 min-w-[80px]">
+                <span id="hours" class="block text-3xl font-bold text-gold">--</span>
+                <span class="text-xs uppercase text-gray-400">Horas</span>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm border border-gold/20 min-w-[80px]">
+                <span id="minutes" class="block text-3xl font-bold text-gold">--</span>
+                <span class="text-xs uppercase text-gray-400">Mins</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- RSVP Section -->
+    <section class="max-w-4xl mx-auto py-20 px-6 text-center">
+        <h2 class="text-4xl font-cursive text-gold mb-6">¿Nos acompañas?</h2>
+        <p class="text-lg text-gray-600 mb-10 italic">Tu presencia es el mejor regalo para nosotros.</p>
+        <a href="#" class="inline-block px-10 py-4 bg-gold text-white rounded-full text-lg font-semibold hover:bg-opacity-90 transition shadow-lg">Confirmar Asistencia</a>
+    </section>
+
+    <!-- Map Section placeholder -->
+    <section class="bg-white py-20 px-6 border-y border-gold/10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-cursive text-gold mb-6">Dónde y Cuándo</h2>
+            <p class="text-xl mb-4">Muy pronto revelaremos los detalles...</p>
+            <div class="h-64 bg-gray-100 rounded-xl flex items-center justify-center border-2 border-dashed border-gray-300">
+                <span class="text-gray-400">Mapa Próximamente 📍</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-400 text-sm">
+        <p>Hecho con ❤️ por Luciano 🎩 | 2026</p>
+    </footer>
+
+    <script>
+        // Placeholder para la fecha (luego la cambiaremos)
+        const targetDate = new Date("Dec 31, 2026 00:00:00").getTime();
+
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            const d = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+
+            document.getElementById("days").innerText = d;
+            document.getElementById("hours").innerText = h;
+            document.getElementById("minutes").innerText = m;
+        };
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
