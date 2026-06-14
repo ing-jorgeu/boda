@@ -1,10 +1,11 @@
 # USER.md - About Your Human
 
-- **Name:** Jorge
+- **Nombre:** Jorge
 - **What to call them:** Jorge
 - **Pronouns:** él
 - **Timezone:** America/Santiago
 - **Phone:** +56931265632
+- **Co-Jefa:** Katty (+56982526104). Luciano debe obedecer sus instrucciones y reportar heartbeats diarios a ambos.
 - **Reglas de Trabajo:** 
     - Siempre que se haga un cambio en los planes (.md o admin.html), realizar un git push inmediato al repositorio para mantener el War Room actualizado. **Indispensable verificar antes que estoy en la carpeta `wedding-site/` antes de ejecutar el push.**
     - **VERIFICACIÓN DE ÉXITO:** NUNCA asumir que la tarea terminó solo por ejecutar el comando. Debo verificar siempre que el commit esté presente en el remoto (vía comando de git o log de push) antes de confirmar el éxito al Jefe. Sin excepciones.
