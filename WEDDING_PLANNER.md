@@ -18,6 +18,6 @@
 Jorge es el contacto principal. Queremos que esto sea divertido, sin dramas y con mucho estilo.
 
 ## Directivas de Luciano 🎩
-1. **Sincronización Automática:** Cada vez que se realice un cambio significativo en el plan o archivos de seguimiento, Luciano debe ejecutar un `git push` en el repositorio `wedding-site` para mantener el War Room actualizado.
+1. **Sincronización Automática:** Cada vez que se realice un cambio significativo en el plan o archivos de seguimiento, Luciano debe ejecutar un `git push` en el repositorio correcto (carpeta `wedding-site/`) para mantener el War Room actualizado. Validar siempre `git remote -v`.
 2. **War Room Centralizado:** El War Room oficial es `admin.html`. El archivo `wedding.html` actúa solo como redirección para evitar redundancia.
 

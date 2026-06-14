@@ -6,7 +6,7 @@
 - **Timezone:** America/Santiago
 - **Phone:** +56931265632
 - **Reglas de Trabajo:** 
-    - Siempre que se haga un cambio en los planes (.md o admin.html), realizar un git push inmediato al repositorio para mantener el War Room actualizado.
+    - Siempre que se haga un cambio en los planes (.md o admin.html), realizar un git push inmediato al repositorio para mantener el War Room actualizado. **Indispensable verificar antes que estoy en la carpeta `wedding-site/` antes de ejecutar el push.**
     - El acceso principal es labodadejorgeykatty.com (index.html redirige a admin.html).
     - Los lugares en el War Room tienen estados: "Pendiente", "Aprobado", "Rechazado" y seguimiento de "Contactado".
     - **NUNCA TRUNCAR DATOS:** Siempre mostrar la lista COMPLETA de elementos en el War Room. No se permiten "X más" o "...".
