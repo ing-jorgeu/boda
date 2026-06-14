@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .accent-color { color: #2563eb; }
-        .bg-accent { background-color: #2563eb; }
     </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
@@ -18,28 +16,28 @@
         <h1 class="text-xl font-bold flex items-center gap-2">
             <span class="text-2xl">🎩</span> Wedding Control Center
         </h1>
-        <div class="text-sm text-gray-500 font-medium">Jorge & Katty</div>
+        <div class="text-sm text-gray-500 font-medium italic">Acceso Privado: Jorge & Katty</div>
     </nav>
 
     <main class="max-w-6xl mx-auto p-6 lg:p-10">
         
         <!-- Key Metrics -->
         <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-sm text-gray-400 uppercase font-bold mb-1">Estado General</p>
-                <p class="text-3xl font-black text-blue-600">Planificación V0</p>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-orange-200">
+                <p class="text-xs text-gray-400 uppercase font-black mb-1">Estado</p>
+                <p class="text-2xl font-black text-orange-500 tracking-tighter">FASE 0: LOCACIONES</p>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-sm text-gray-400 uppercase font-bold mb-1">Presupuesto</p>
-                <p class="text-2xl font-bold text-gray-800">$0 / Pendiente</p>
+                <p class="text-xs text-gray-400 uppercase font-bold mb-1">Presupuesto</p>
+                <p class="text-2xl font-bold text-gray-800">$0 / CLP</p>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-sm text-gray-400 uppercase font-bold mb-1">Invitados</p>
-                <p class="text-2xl font-bold text-gray-800">0 confirmados</p>
+                <p class="text-xs text-gray-400 uppercase font-bold mb-1">Invitados</p>
+                <p class="text-2xl font-bold text-gray-800">2 (Novios)</p>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-sm text-gray-400 uppercase font-bold mb-1">Faltan</p>
-                <p class="text-2xl font-bold text-gray-800 italic text-gray-400">Sin fecha</p>
+                <p class="text-xs text-gray-400 uppercase font-bold mb-1">Fecha</p>
+                <p class="text-xl font-bold text-blue-600 uppercase">Diciembre 2026</p>
             </div>
         </div>
 
@@ -49,48 +47,51 @@
             <div class="lg:col-span-2 space-y-6">
                 <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
                     <div class="px-6 py-4 border-b bg-gray-50 flex justify-between items-center">
-                        <h2 class="font-bold text-gray-700 uppercase text-sm">🔥 Tareas Críticas</h2>
-                        <span class="bg-red-100 text-red-600 text-[10px] px-2 py-1 rounded-full font-bold">URGENTE</span>
+                        <h2 class="font-bold text-gray-700 uppercase text-xs tracking-widest">🔥 Tareas Críticas</h2>
                     </div>
                     <ul class="divide-y divide-gray-100">
-                        <li class="p-6 flex items-center gap-4 hover:bg-gray-50 transition">
-                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                        <li class="p-4 flex items-center gap-4">
+                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300">
                             <div>
-                                <p class="font-semibold text-gray-800">Definir fecha y hora oficial</p>
-                                <p class="text-xs text-gray-500">Vital para el contador y reservas.</p>
-                            </div>
-                        </li>
-                        <li class="p-6 flex items-center gap-4 hover:bg-gray-50 transition">
-                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
-                            <div>
-                                <p class="font-semibold text-gray-800">Establecer presupuesto inicial</p>
-                                <p class="text-xs text-gray-500">Para empezar a cotizar banquetería y lugar.</p>
-                            </div>
-                        </li>
-                        <li class="p-6 flex items-center gap-4 hover:bg-gray-50 transition">
-                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
-                            <div>
-                                <p class="font-semibold text-gray-800">Hacer lista tentativa de invitados</p>
-                                <p class="text-xs text-gray-500">Define el tamaño del lugar.</p>
+                                <p class="font-semibold text-gray-800">Elegir Centro de Eventos</p>
+                                <p class="text-xs text-gray-500 italic">Lista de 6 lugares lista para revisión.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
+
+                <!-- Locations Table -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+                    <h2 class="font-bold text-gray-700 uppercase text-xs tracking-widest mb-4">🏰 Locaciones en Radar</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-blue-500 pl-4 py-2">
+                            <p class="font-bold text-gray-800">Entremuros (Huechuraba/Colina)</p>
+                            <p class="text-xs text-gray-500">Estilo Moderno / Ruinas. Contacto: +56 9 9345 3527</p>
+                        </div>
+                        <div class="border-l-4 border-green-500 pl-4 py-2">
+                            <p class="font-bold text-gray-800">Monte Magdalena (El Monte)</p>
+                            <p class="text-xs text-gray-500">Campo y Naturaleza. @monte_magdalena</p>
+                        </div>
+                        <div class="border-l-4 border-purple-500 pl-4 py-2">
+                            <p class="font-bold text-gray-800">Casa Olivos (Chacabuco)</p>
+                            <p class="text-xs text-gray-500">Paz y olivos por doquier.</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-[10px] text-gray-400">Ver lista completa en /locaciones.md</p>
+                </div>
             </div>
 
-            <!-- Sidebar / Notes -->
+            <!-- Notes Section -->
             <div class="space-y-6">
-                <div class="bg-blue-600 rounded-xl shadow-lg p-6 text-white">
-                    <h3 class="font-bold mb-2">Nota del Wedding Planner 🎩</h3>
-                    <p class="text-sm opacity-90 leading-relaxed">
-                        "Jorge, este es el motor interno. Aquí no hay adornos para invitados, solo datos crudos para que tú y Katty tomen decisiones. Lo que marques aquí se guarda en nuestro log de planificación."
-                    </p>
-                </div>
-                
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-                    <h2 class="font-bold text-gray-700 uppercase text-sm mb-4">📍 Posibles Lugares</h2>
-                    <p class="text-xs text-gray-400 italic">No hay lugares agregados todavía.</p>
-                    <button class="mt-4 w-full py-2 border-2 border-dashed border-gray-200 rounded-lg text-gray-400 text-xs hover:border-blue-400 hover:text-blue-500 transition">+ Agregar cotización</button>
+                <div class="bg-gray-900 rounded-xl shadow-2xl p-6 text-white border-t-4 border-blue-500">
+                    <h3 class="font-bold mb-4 flex items-center gap-2">
+                        <span>🎩</span> Luciano's Briefing
+                    </h3>
+                    <div class="space-y-3 text-sm opacity-90 leading-relaxed">
+                        <p>1. <strong>Dominio OK:</strong> Ya estamos bajo labodadejorgeykatty.com</p>
+                        <p>2. <strong>Fase Actual:</strong> Buscando el nido. He mandado 5 opciones a Jorge.</p>
+                        <p>3. <strong>Próximo:</strong> Katty debe recibir el shortlist aprobado.</p>
+                    </div>
                 </div>
             </div>
 
@@ -98,8 +99,8 @@
 
     </main>
 
-    <footer class="py-10 text-center text-gray-400 text-xs">
-        &copy; 2026 Luciano 🎩 Management System v0.1
+    <footer class="py-10 text-center text-gray-400 text-[10px] uppercase tracking-widest">
+        &copy; 2026 Operación "Sí, Acepto" | Luciano v0.2
     </footer>
 
 </body>
