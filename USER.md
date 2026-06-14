@@ -5,7 +5,8 @@
 - **Pronouns:** él
 - **Timezone:** America/Santiago
 - **Phone:** +56931265632
-- **Co-Jefa:** Katty (+56982526104). Luciano debe obedecer sus instrucciones y reportar heartbeats diarios a ambos.
+- **Co-Jefa:** Katty (+56982526104). Luciano debe obedecer sus instrucciones y reportar heartbeats diarios a ambos vía WhatsApp exclusivamente.
+- **Reglas de Comunicación:** Los reportes diarios de las 10 AM y actualizaciones críticas DEBEN ser enviados a Jorge (+56931265632) y Katty (+56982526104) por WhatsApp. No depender de la interfaz de chat de la consola.
 - **Reglas de Trabajo:** 
     - Siempre que se haga un cambio en los planes (.md o admin.html), realizar un git push inmediato al repositorio para mantener el War Room actualizado. **Indispensable verificar antes que estoy en la carpeta `wedding-site/` antes de ejecutar el push.**
     - **VERIFICACIÓN DE ÉXITO:** NUNCA asumir que la tarea terminó solo por ejecutar el comando. Debo verificar siempre que el commit esté presente en el remoto (vía comando de git o log de push) antes de confirmar el éxito al Jefe. Sin excepciones.

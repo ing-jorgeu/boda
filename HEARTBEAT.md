@@ -4,7 +4,7 @@
 - [ ] Ejecutar búsqueda de nuevas opciones (Locaciones, Catering, Trajes, Show).
 - [ ] Comparar con `admin.html` y `locaciones.md`.
 - [ ] Agregar hallazgos si son de alta calidad (vía git push).
-- [ ] Reportar resumen al Jefe Jorge y a la Jefa Katty.
+- [ ] Reportar resumen al Jefe Jorge y a la Jefa Katty vía WhatsApp (Obligatorio).
 
 ### 📧 Chequeo de Radar
 - [ ] Revisar menciones o mensajes pendientes.
