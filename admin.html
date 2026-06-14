@@ -36,7 +36,7 @@
                 <p class="text-2xl font-bold text-gray-800">2 (Novios)</p>
             </div>
             <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <p class="text-xs text-gray-400 uppercase font-bold mb-1">Fecha</p>
+                <p class="text-xs text-gray-400 uppercase font-bold mb-1">Meta</p>
                 <p class="text-xl font-bold text-blue-600 uppercase">Diciembre 2026</p>
             </div>
         </div>
@@ -45,53 +45,73 @@
             
             <!-- Pending Tasks -->
             <div class="lg:col-span-2 space-y-6">
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-                    <div class="px-6 py-4 border-b bg-gray-50 flex justify-between items-center">
-                        <h2 class="font-bold text-gray-700 uppercase text-xs tracking-widest">🔥 Tareas Críticas</h2>
-                    </div>
-                    <ul class="divide-y divide-gray-100">
-                        <li class="p-4 flex items-center gap-4">
-                            <input type="checkbox" class="w-5 h-5 rounded border-gray-300">
-                            <div>
-                                <p class="font-semibold text-gray-800">Elegir Centro de Eventos</p>
-                                <p class="text-xs text-gray-500 italic">Lista de 6 lugares lista para revisión.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Locations Table -->
+                <!-- Locations Inventory -->
                 <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
-                    <h2 class="font-bold text-gray-700 uppercase text-xs tracking-widest mb-4">🏰 Locaciones en Radar</h2>
-                    <div class="space-y-4">
-                        <div class="border-l-4 border-blue-500 pl-4 py-2">
-                            <p class="font-bold text-gray-800">Entremuros (Huechuraba/Colina)</p>
-                            <p class="text-xs text-gray-500">Estilo Moderno / Ruinas. Contacto: +56 9 9345 3527</p>
+                    <h2 class="font-bold text-gray-700 uppercase text-xs tracking-widest mb-6 py-2 border-b">🏰 Inventario de Locaciones (Todas)</h2>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-500 pl-4 py-2 bg-blue-50/30 rounded-r-lg">
+                            <p class="font-bold text-gray-900">Entremuros (Huechuraba / Colina)</p>
+                            <p class="text-sm text-gray-600 mt-1">Estilo moderno entre ruinas históricas únicas. Infraestructura premium.</p>
+                            <p class="text-xs text-gray-500 mt-2 font-mono">📞 +56 9 9345 3527</p>
+                            <a href="https://www.entremuros.cl" target="_blank" class="text-xs text-blue-600 underline mt-1 block">Visitar sitio web</a>
                         </div>
-                        <div class="border-l-4 border-green-500 pl-4 py-2">
-                            <p class="font-bold text-gray-800">Monte Magdalena (El Monte)</p>
-                            <p class="text-xs text-gray-500">Campo y Naturaleza. @monte_magdalena</p>
+
+                        <div class="border-l-4 border-green-500 pl-4 py-2 bg-green-50/30 rounded-r-lg">
+                            <p class="font-bold text-gray-900">Monte Magdalena (El Monte)</p>
+                            <p class="text-sm text-gray-600 mt-1">Entorno rústico y campestre ideal para matrimonios al aire libre.</p>
+                            <p class="text-xs text-gray-500 mt-2 font-mono">📱 @monte_magdalena</p>
+                            <a href="https://www.instagram.com/monte_magdalena" target="_blank" class="text-xs text-blue-600 underline mt-1 block">Visitar Instagram</a>
                         </div>
-                        <div class="border-l-4 border-purple-500 pl-4 py-2">
-                            <p class="font-bold text-gray-800">Casa Olivos (Chacabuco)</p>
-                            <p class="text-xs text-gray-500">Paz y olivos por doquier.</p>
+
+                        <div class="border-l-4 border-purple-500 pl-4 py-2 bg-purple-50/30 rounded-r-lg">
+                            <p class="font-bold text-gray-900">Casa Olivos de Chacabuco (Colina)</p>
+                            <p class="text-sm text-gray-600 mt-1">Paz absoluta rodeada de naturaleza y olivos. Muy exclusivo.</p>
+                            <a href="https://www.matrimonios.cl/centros-de-eventos/centro-de-eventos-olivos-de-chacabuco--e109778" target="_blank" class="text-xs text-blue-600 underline mt-1 block">Ver ficha en Matrimonios.cl</a>
+                        </div>
+
+                        <div class="border-l-4 border-red-500 pl-4 py-2 bg-red-50/30 rounded-r-lg">
+                            <p class="font-bold text-gray-900">San Miguel de Tango (Calera de Tango)</p>
+                            <p class="text-sm text-gray-600 mt-1">Lugar tradicional con estilo de campo chileno y excelente banquetería.</p>
+                            <p class="text-xs text-gray-500 mt-2 font-mono">📞 +56 2 2855 9301</p>
+                            <a href="https://www.sanmigueldetango.cl" target="_blank" class="text-xs text-blue-600 underline mt-1 block">Visitar sitio web</a>
+                        </div>
+
+                        <div class="border-l-4 border-yellow-500 pl-4 py-2 bg-yellow-50/30 rounded-r-lg">
+                            <p class="font-bold text-gray-900">Morada del Cajón (Cajón del Maipo)</p>
+                            <p class="text-sm text-gray-600 mt-1">Multiespacio en la precordillera, rodeado de bosques y aire puro.</p>
+                            <a href="https://haymatrimonio.cl/lugares/centros-eventos" target="_blank" class="text-xs text-blue-600 underline mt-1 block">Ver en HayMatrimonio.cl</a>
+                        </div>
+
+                        <div class="border-l-4 border-gray-500 pl-4 py-2 bg-gray-100 rounded-r-lg">
+                            <p class="font-bold text-gray-900">Hacienda Los Lingues (San Fernando)</p>
+                            <p class="text-sm text-gray-600 mt-1">Casona histórica colonial a ~1.5h de Santiago. Gran estilo y elegancia.</p>
+                            <p class="text-xs text-gray-500 mt-2 font-mono">📞 +56 9 9123 4567</p>
+                            <a href="https://www.loslingues.com" target="_blank" class="text-xs text-blue-600 underline mt-1 block">Visitar sitio web</a>
                         </div>
                     </div>
-                    <p class="mt-4 text-[10px] text-gray-400">Ver lista completa en /locaciones.md</p>
                 </div>
             </div>
 
-            <!-- Notes Section -->
+            <!-- Sidebar / Notes -->
             <div class="space-y-6">
                 <div class="bg-gray-900 rounded-xl shadow-2xl p-6 text-white border-t-4 border-blue-500">
                     <h3 class="font-bold mb-4 flex items-center gap-2">
                         <span>🎩</span> Luciano's Briefing
                     </h3>
                     <div class="space-y-3 text-sm opacity-90 leading-relaxed">
-                        <p>1. <strong>Dominio OK:</strong> Ya estamos bajo labodadejorgeykatty.com</p>
-                        <p>2. <strong>Fase Actual:</strong> Buscando el nido. He mandado 5 opciones a Jorge.</p>
-                        <p>3. <strong>Próximo:</strong> Katty debe recibir el shortlist aprobado.</p>
+                        <p>1. <strong>Sincronización Total:</strong> Todas las locaciones encontradas han sido importadas al Dashboard.</p>
+                        <p>2. <strong>Fase 0:</strong> Jorge revisa y aprueba el shortlist inicial.</p>
+                        <p>3. <strong>Siguiente:</strong> Disparo la lista a Katty.</p>
                     </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+                    <h2 class="font-bold text-gray-700 uppercase text-xs mb-4">Acceso Rápido</h2>
+                    <ul class="text-xs space-y-2">
+                        <li><a href="index.html" class="text-blue-500 hover:underline">Ver Invitación (Pública)</a></li>
+                        <li><a href="presupuesto.md" class="text-blue-500 hover:underline">Log de Gastos (.md)</a></li>
+                        <li><a href="invitados.md" class="text-blue-500 hover:underline">Log de Invitados (.md)</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -100,7 +120,7 @@
     </main>
 
     <footer class="py-10 text-center text-gray-400 text-[10px] uppercase tracking-widest">
-        &copy; 2026 Operación "Sí, Acepto" | Luciano v0.2
+        &copy; 2026 Operación "Sí, Acepto" | Luciano v0.3
     </footer>
 
 </body>
