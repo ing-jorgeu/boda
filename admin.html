@@ -10,7 +10,7 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-gray-100 min-h-screen">
+<body class="bg-gray-100 min-h-screen text-gray-800">
 
     <nav class="bg-black text-white px-6 py-4 flex justify-between items-center shadow-2xl">
         <h1 class="text-xl font-black flex items-center gap-2">
@@ -18,11 +18,11 @@
         </h1>
         <div class="text-[10px] uppercase tracking-widest font-bold opacity-60 text-right">
             Sincronización Automática ON<br>
-            Control de Locaciones v2.1
+            Control de Locaciones v2.2 (FULL)
         </div>
     </nav>
 
-    <main class="max-w-7xl mx-auto p-4 md:p-6 text-gray-800">
+    <main class="max-w-7xl mx-auto p-4 md:p-6">
         
         <!-- Key Metrics -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -47,77 +47,50 @@
         <!-- Master List -->
         <div class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
             <div class="bg-gray-50 px-6 py-4 border-b">
-                <h2 class="text-sm font-black text-gray-700 uppercase tracking-tighter">📋 REGISTRO MAESTRO DE LOCACIONES</h2>
-                <p class="text-[10px] text-gray-400 font-bold uppercase mt-1">Status: Pendiente | Aprobado | Rechazado</p>
+                <h2 class="text-sm font-black text-gray-700 uppercase tracking-tighter">📋 REGISTRO MAESTRO DE LOCACIONES (COMPLETO)</h2>
             </div>
             <div class="p-0 overflow-x-auto">
                 <table class="w-full text-left text-sm border-collapse">
                     <thead class="bg-gray-100 text-[10px] uppercase font-black text-gray-500">
                         <tr>
                             <th class="p-4 border-b">Nombre</th>
-                            <th class="p-4 border-b">Ubicación / Estilo</th>
                             <th class="p-4 border-b text-center">Contactado</th>
                             <th class="p-4 border-b text-center">Status</th>
                             <th class="p-4 border-b text-center">Acción</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-100 italic md:not-italic">
-                        <!-- Locaciones con Estado -->
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-bold">Entremuros</td>
-                            <td class="p-4 text-xs text-gray-500 italic">Huechuraba / Industrial</td>
-                            <td class="p-4 text-center text-xs font-bold text-orange-500">NO</td>
-                            <td class="p-4 text-center"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td>
-                            <td class="p-4 text-center"><a href="https://www.entremuros.cl" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td>
-                        </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-bold">Monte Magdalena</td>
-                            <td class="p-4 text-xs text-gray-500 italic">El Monte / Campo</td>
-                            <td class="p-4 text-center text-xs font-bold text-orange-500">NO</td>
-                            <td class="p-4 text-center"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td>
-                            <td class="p-4 text-center"><a href="https://www.instagram.com/monte_magdalena" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td>
-                        </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-bold">Casa Olivos</td>
-                            <td class="p-4 text-xs text-gray-500 italic">Chacabuco / Naturaleza</td>
-                            <td class="p-4 text-center text-xs font-bold text-orange-500">NO</td>
-                            <td class="p-4 text-center"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td>
-                            <td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td>
-                        </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-bold">San Miguel de Tango</td>
-                            <td class="p-4 text-xs text-gray-500 italic">Calera de Tango / Tradicional</td>
-                            <td class="p-4 text-center text-xs font-bold text-orange-500">NO</td>
-                            <td class="p-4 text-center"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td>
-                            <td class="p-4 text-center"><a href="https://www.sanmigueldetango.cl" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td>
-                        </tr>
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-bold">Altos del Paico</td>
-                            <td class="p-4 text-xs text-gray-500 italic">El Monte / Georgiana</td>
-                            <td class="p-4 text-center text-xs font-bold text-orange-500">NO</td>
-                            <td class="p-4 text-center"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td>
-                            <td class="p-4 text-center"><a href="https://www.altosdelpaico.cl/" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td>
-                        </tr>
-                        <!-- Agregado el resto siguiendo el mismo patrón -->
-                        <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-bold italic text-gray-400">... Resto del inventario (22 lugares) ...</td>
-                            <td class="p-4"></td>
-                            <td class="p-4 text-center font-bold text-orange-500">NO</td>
-                            <td class="p-4 text-center text-[10px] font-black uppercase tracking-widest text-gray-400 italic">PENDIENTE</td>
-                            <td class="p-4 text-center"></td>
-                        </tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Entremuros</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.entremuros.cl" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Monte Magdalena</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.instagram.com/monte_magdalena" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Casa Olivos</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">San Miguel de Tango</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.sanmigueldetango.cl" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Altos del Paico</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.altosdelpaico.cl/" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Casona San Ignacio</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.casonasanignacio.com/" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Hacienda Los Lingues</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.loslingues.com" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Morada del Cajón</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://haymatrimonio.cl/lugares/centros-eventos" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Palacio Círculo Español</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Fundo Talanquén</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Casona Los Nogales</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Santiago Marriott Hotel</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Casona Verde de Lonquén</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Slier Centro de Eventos</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Club de la Unión</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://lareinadeldato.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">INFO ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Centro Parque Lipangue</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://lareinadeldato.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">INFO ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Alto San Francisco</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://lareinadeldato.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">INFO ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Puerto la Reserva</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://lareinadeldato.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">INFO ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Casona Cañaveral</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.casonacanaveral.cl" target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Casa Barros Echeñique</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">VER ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Fundo La Patagonia</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://blog.cotillonactivarte.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">INFO ↗</a></td></tr>
+                        <tr class="hover:bg-gray-50"><td class="p-4 font-bold">Casa García Huidobro</td><td class="p-4 text-center text-xs font-bold text-orange-500">NO</td><td class="p-4 text-center px-2"><span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest border border-gray-200">PENDIENTE</span></td><td class="p-4 text-center"><a href="https://blog.cotillonactivarte.cl/..." target="_blank" class="text-blue-600 font-black hover:underline uppercase text-[10px]">INFO ↗</a></td></tr>
                     </tbody>
                 </table>
-                <div class="bg-gray-50 p-4 text-[10px] font-bold text-gray-500 italic">
-                    * Todos los registros inician en estado PENDIENTE. Los cambios son realizados exclusivamente por Luciano 🎩 bajo orden de Jorge o Katty.
-                </div>
             </div>
         </div>
 
     </main>
 
     <footer class="py-10 text-center text-gray-400 text-[10px] uppercase font-bold tracking-[0.2em]">
-        Operación "Sí, Acepto" | Guerra de Datos Luciano v2.1
+        Operación "Sí, Acepto" | Guerra de Datos Luciano v2.2
     </footer>
 
 </body>
