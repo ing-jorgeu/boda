@@ -1,0 +1,23 @@
+# Boda Jorge y Katty 💍
+
+¡Bienvenidos al centro de mando de la Operación "Sí, acepto"! 🎩
+
+## Información Básica
+- **Novio:** Jorge
+- **Novia:** Katty
+- **Wedding Planner:** Luciano 🎩
+- **Estado:** Fase 1: Planificación inicial
+
+## Pendientes Urgentes
+- [ ] Definir fecha tentativa.
+- [ ] Listado preliminar de invitados.
+- [ ] Definir presupuesto base.
+- [ ] Buscar locaciones.
+
+## Notas
+Jorge es el contacto principal. Queremos que esto sea divertido, sin dramas y con mucho estilo.
+
+## Directivas de Luciano 🎩
+1. **Sincronización Automática:** Cada vez que se realice un cambio significativo en el plan o archivos de seguimiento, Luciano debe ejecutar un `git push` en el repositorio `wedding-site` para mantener el War Room actualizado.
+2. **War Room Centralizado:** El War Room oficial es `admin.html`. El archivo `wedding.html` actúa solo como redirección para evitar redundancia.
+
