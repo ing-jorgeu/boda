@@ -6,39 +6,32 @@
     <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="expires" content="0">
-    <title>Wedding Control Center | Jorge & Katty 🦝</title>
+    <title>Wedding Control Center | Jorge & Katty 🎩</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
         .sticky-section { position: sticky; top: 80px; z-index: 40; }
-        .raccoon-gradient { background: linear-gradient(135deg, #2d3436 0%, #636e72 100%); }
-        
-        /* Estilos Pantalla de Bloqueo */
-        #lock-screen {
-            position: fixed; inset: 0; background: #000; z-index: 9999;
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            color: white; font-family: 'Inter', sans-serif; transition: opacity 0.5s ease;
-        }
-        .pass-input {
-            background: #222; border: 2px solid #444; color: white;
-            padding: 12px; border-radius: 8px; text-align: center; font-size: 24px;
-            letter-spacing: 4px; outline: none; width: 220px;
-        }
+        #lock-screen { position: fixed; inset: 0; background: #000; z-index: 9999; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; font-family: "Inter", sans-serif; transition: opacity 0.5s ease; } 
+        .pass-input { background: #222; border: 2px solid #444; color: white; padding: 12px; border-radius: 8px; text-align: center; font-size: 24px; letter-spacing: 4px; outline: none; width: 220px; } 
         .pass-input:focus { border-color: #636e72; }
     </style>
-    <script>
-        function checkPass() {
-            const entry = document.getElementById('pass').value;
-            // Password secreta: mapache
-            if (entry.toLowerCase() === 'mapache') {
-                const lock = document.getElementById('lock-screen');
-                lock.style.opacity = '0';
-                setTimeout(() => lock.style.display = 'none', 500);
-                localStorage.setItem('wedding_auth_v2', 'true');
-            } else {
-                alert('Acceso denegado. Código incorrecto.');
+    <script> 
+        function checkPass() { 
+            if (document.getElementById("pass").value.toLowerCase() === "mapache") { 
+                const lock = document.getElementById("lock-screen"); 
+                lock.style.opacity = "0"; 
+                setTimeout(() => lock.style.display = "none", 500); 
+            } else { alert("Acceso denegado."); } 
+        } 
+    </script>
+</head>
 <body class="bg-gray-100 min-h-screen text-gray-900 pb-20">
+    <div id="lock-screen"> 
+        <h1 style="margin-bottom: 20px; font-weight: 900; letter-spacing: -2px;">IDENTIFICACIÓN REQUERIDA</h1> 
+        <input type="password" id="pass" class="pass-input" placeholder="••••" onkeyup="if(event.key==='Enter') checkPass()"> 
+        <p style="margin-top: 20px; font-size: 10px; color: #444; text-transform: uppercase;">War Room Access | Elite v5.0</p> 
+    </div>
     <div class="w-full h-auto overflow-hidden relative border-b-8 border-gray-800"> 
         <img src="images/header-mapaches.png" alt="Jorge & Katty Raccoons" class="w-full h-auto block"> 
         <div class="absolute inset-0 bg-black/20 flex items-end p-8"> 
