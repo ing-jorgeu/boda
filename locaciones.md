@@ -15,3 +15,5 @@
 | **Club de la Unión** | Santiago Centro | Palacio / Histórico | - | [clubdelaunion.cl](https://lareinadeldato.cl/datos/datos-de-centros-de-evento-para-matrimonios-y-banqueteros/) |
 | **Centro Parque Lipangue** | Lampa | Naturaleza / Amplio | - | [lipangue.cl](https://lareinadeldato.cl/datos/datos-de-centros-de-evento-para-matrimonios-y-banqueteros/) |
 | **Alto San Francisco** | Santiago Centro | Urbano / Vista | - | [altosanfrancisco.cl](https://lareinadeldato.cl/datos/datos-de-centros-de-evento-para-matrimonios-y-banqueteros/) |
+| **The Ritz-Carlton Santiago** | Santiago (El Golf) | Lujo / Hotel | - | [ritzcarlton.com](https://www.ritzcarlton.com/santiago) |
+| **Centro de Eventos Aire Puro** | Cerro La Campana (Olmué) | Naturaleza / Exclusivo | - | [haymatrimonio.cl](https://haymatrimonio.cl/lugares/centros-eventos) |
