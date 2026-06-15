@@ -38,43 +38,23 @@
                 localStorage.setItem('wedding_auth_v2', 'true');
             } else {
                 alert('Acceso denegado. Código incorrecto.');
-            }
-        }
-        window.addEventListener('DOMContentLoaded', (event) => {
-            if (localStorage.getItem('wedding_auth_v2') === 'true') {
-                document.getElementById('lock-screen').style.display = 'none';
-            }
-        });
-    </script>
-</head>
 <body class="bg-gray-100 min-h-screen text-gray-900 pb-20">
-
-    <!-- Pantalla de Bloqueo -->
-    <div id="lock-screen">
-        <div class="text-7xl mb-6 opacity-20">🎩</div>
-        <h2 class="text-xl font-black mb-1 uppercase tracking-[0.4em]">War Room</h2>
-        <p class="text-gray-500 mb-10 text-[10px] uppercase font-bold tracking-widest italic font-bold text-center">Jorge & Katty<br>Solo personal autorizado</p>
-        <input type="password" id="pass" class="pass-input" placeholder="••••" onkeydown="if(event.key==='Enter') checkPass()">
-        <button onclick="checkPass()" class="mt-8 bg-white text-black px-10 py-3 rounded-full font-black uppercase text-[10px] tracking-widest hover:bg-gray-200 transition-all border-2 border-transparent hover:scale-105 active:scale-95">Ingresar</button>
-    </div>
-
-    <!-- Header con Imagen de Mapaches -->
-    <div class="w-full relative border-b-8 border-gray-800 bg-black">
-        <img src="images/header-mapaches.png" alt="Jorge & Katty Raccoons" class="w-full h-auto max-h-[80vh] block mx-auto">
-        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
-            <h1 class="text-white text-4xl md:text-6xl font-black tracking-tighter drop-shadow-2xl italic">Operación Mapache 🦝</h1>
-        </div>
+    <div class="w-full h-auto overflow-hidden relative border-b-8 border-gray-800"> 
+        <img src="images/header-mapaches.png" alt="Jorge & Katty Raccoons" class="w-full h-auto block"> 
+        <div class="absolute inset-0 bg-black/20 flex items-end p-8"> 
+            <h1 class="text-white text-5xl md:text-7xl font-black tracking-tighter drop-shadow-2xl italic">WAR ROOM v5.0</h1> 
+        </div> 
     </div>
 
     <nav class="bg-black text-white px-6 py-5 flex justify-between items-center shadow-2xl sticky top-0 z-50">
         <div>
             <h1 class="text-2xl font-black flex items-center gap-3 tracking-tighter">
-                <span class="text-3xl">🦝</span> WAR ROOM ELITE v6.0
+                <span class="text-3xl">🎩</span> WAR ROOM ELITE v4.6
             </h1>
-            <p class="text-[9px] uppercase tracking-[0.3em] font-bold text-gray-400">Jorge & Katty | The Raccoon Wedding 2026</p>
+            <p class="text-[9px] uppercase tracking-[0.3em] font-bold text-blue-400">Jorge & Katty | Control de Decisión Total</p>
         </div>
         <div class="text-right">
-            <p class="text-[10px] uppercase font-black text-green-400">Estado: Exploración Integral (Protegido 🔒)</p>
+            <p class="text-[10px] uppercase font-black text-green-400">Estado: Exploración Integral (Búsqueda Diaria Activada)</p>
         </div>
     </nav>
 
@@ -82,7 +62,7 @@
         
         <!-- Métricas -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="bg-white p-6 rounded shadow-lg border-t-4 border-orange-500 text-center">
+            <div class="bg-white p-6 rounded shadow-lg border-t-4 border-orange-500">
                 <p class="text-[10px] text-gray-400 uppercase font-black mb-1">Estado</p>
                 <p class="text-xl font-black">EXPLORACIÓN</p>
             </div>
@@ -94,7 +74,7 @@
                 <p class="text-[10px] text-gray-400 uppercase font-black mb-1">Invitados</p>
                 <p class="text-xl font-black">2 CONFIRMADOS</p>
             </div>
-            <div class="bg-white p-6 rounded shadow-lg border-t-4 border-purple-500 text-center">
+            <div class="bg-white p-6 rounded shadow-lg border-t-4 border-purple-500 text-right">
                 <p class="text-[10px] text-gray-400 uppercase font-black mb-1">Hallazgos</p>
                 <p class="text-xl font-black">90+ OPCIONES</p>
             </div>
@@ -102,10 +82,10 @@
 
         <!-- 0. IDEAS DE LUCIANO -->
         <section class="bg-white rounded shadow-sm border-2 border-blue-500 overflow-hidden">
-            <div class="bg-blue-600 px-6 py-3 text-white flex justify-between items-center font-black text-xs uppercase tracking-widest italic text-center">
+            <div class="bg-blue-600 px-6 py-3 text-white flex justify-between items-center font-black text-xs uppercase tracking-widest italic">
                 <span>🚀 IDEAS DE LUCIANO: TENDENCIAS CHILE 2026</span>
             </div>
-            <div class="p-0 overflow-x-auto text-[11px]">
+            <div class="p-0 overflow-x-auto">
                 <table class="w-full text-[11px] border-collapse">
                     <thead class="bg-gray-50 border-b font-black text-gray-400 uppercase">
                         <tr><th class="p-4">Concepto</th><th class="p-4">Por qué?</th><th class="p-4">Proveedor</th><th class="p-4 text-center">Web</th></tr>
@@ -124,7 +104,7 @@
 
         <!-- 1. INVITADOS -->
         <section class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
-            <div class="bg-gray-900 px-6 py-3 text-white font-black text-xs uppercase tracking-widest text-center">👥 GESTIÓN DE INVITADOS (REGISTRO BASE)</div>
+            <div class="bg-gray-900 px-6 py-3 text-white font-black text-xs uppercase tracking-widest">👥 GESTIÓN DE INVITADOS (REGISTRO BASE)</div>
             <table class="w-full text-sm">
                 <thead><tr class="bg-gray-50 text-[10px] uppercase font-black text-gray-500 border-b"><th class="p-4 text-left">Nombre</th><th class="p-4 text-center">Lado</th><th class="p-4 text-center">Status</th></tr></thead>
                 <tbody class="divide-y divide-gray-100">
@@ -138,14 +118,14 @@
         <section class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
             <div class="bg-orange-600 px-6 py-3 text-white font-black text-xs uppercase tracking-widest flex justify-between items-center">
                 <span>🏰 REGISTRO HISTÓRICO DE LOCACIONES (32 Hallazgos)</span>
-                <span class="text-[9px] opacity-70 italic">MODO INTEGRAL 🦝</span>
+                <span class="text-[9px] opacity-70 italic">NO TRUNCAR - MODO INTEGRAL ACTIVO</span>
             </div>
-            <div class="overflow-x-auto text-[10px]">
+            <div class="overflow-x-auto">
                 <table class="w-full text-[10px] border-collapse">
                     <thead class="bg-gray-100 uppercase font-black text-gray-400 border-b">
                         <tr><th class="p-3 text-left">Lugar</th><th class="p-3">Detalle / Estilo</th><th class="p-3 text-center">Status</th><th class="p-3 text-center">Web</th></tr>
                     </thead>
-                    <tbody class="divide-y divide-gray-100 italic">
+                    <tbody class="divide-y divide-gray-100">
                         <tr><td class="p-3 font-bold uppercase">Las Majadas de Pirque</td><td class="p-3 italic">Palacio Francés / Parque Centenario / Pirque</td><td class="p-3 text-center font-bold text-gray-400 italic">PENDIENTE</td><td class="p-3 text-center"><a href="https://lasmajadas.cl/" target="_blank" class="text-blue-600 font-bold uppercase underline">WEB</a></td></tr>
                         <tr><td class="p-3 font-bold uppercase">Castillo Hidalgo</td><td class="p-3 italic">Cerro Santa Lucía / Vista Panorámica / Urbano</td><td class="p-3 text-center font-bold text-gray-400 italic">PENDIENTE</td><td class="p-3 text-center"><a href="http://www.castillohidalgo.cl/" target="_blank" class="text-blue-600 font-bold uppercase underline">WEB</a></td></tr>
                         <tr><td class="p-3 font-bold uppercase">Metropolitan Santiago</td><td class="p-3 italic">Ex CasaPiedra / Gran Escala / Vitacura</td><td class="p-3 text-center font-bold text-gray-400 italic">PENDIENTE</td><td class="p-3 text-center"><a href="https://www.metropolitansantiago.cl/" target="_blank" class="text-blue-600 font-bold uppercase underline">WEB</a></td></tr>
@@ -185,24 +165,24 @@
 
         <!-- 3. CATERING COMPLETO -->
         <section class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
-            <div class="bg-blue-600 px-6 py-3 text-white font-black text-xs uppercase tracking-widest italic text-center">🍽️ REGISTRO COMPLETO CATERING & BANQUETERÍA</div>
-            <div class="p-0 overflow-x-auto text-[10px]">
+            <div class="bg-blue-600 px-6 py-3 text-white font-black text-xs uppercase tracking-widest italic">🍽️ REGISTRO COMPLETO CATERING & BANQUETERÍA</div>
+            <div class="p-0">
                 <table class="w-full text-[10px] border-collapse">
                     <tbody class="divide-y divide-gray-100">
-                        <tr><td class="p-4 font-black uppercase italic">Marie Gourmet</td><td class="p-4 opacity-50 italic">Alta Gastronomía / Muy recomendada</td><td class="p-4 text-center px-4"><a href="https://www.mariegourmet.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Sofía Jottar</td><td class="p-4 opacity-50 italic">Referente de lujo total en Chile</td><td class="p-4 text-center px-4"><a href="https://www.sofiajottar.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Amelia Correa</td><td class="p-4 opacity-50 italic">Clásico de Providencia / Elegancia</td><td class="p-4 text-center px-4"><a href="https://www.ameliacorea.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Banquetería Eneldo</td><td class="p-4 opacity-50 italic">Moderno / Estilo Urbano</td><td class="p-4 text-center px-4"><a href="https://www.eneldo.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Banquete Factory</td><td class="p-4 opacity-50 italic">Gran Volumen / Flexibilidad</td><td class="p-4 text-center px-4"><a href="https://banquetefactory.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Banquetería y Catering</td><td class="p-4 opacity-50 italic">Foco Corporativo & Boda</td><td class="p-4 text-center px-4"><a href="https://banqueteriaycatering.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Paolo Naranjo</td><td class="p-4 opacity-50 italic">Rating 4.97 / Música + Menu</td><td class="p-4 text-center px-4"><a href="https://www.2x3.cl/profesional/paolo-naranjo" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Sumo Producciones</td><td class="p-4 opacity-50 italic">Servicio integral / Proyectos</td><td class="p-4 text-center px-4"><a href="https://www.2x3.cl/profesional/sumo-producciones-3" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Guris Eventos</td><td class="p-4 opacity-50 italic">Atención personalizada</td><td class="p-4 text-center px-4"><a href="https://www.2x3.cl/profesional/guris-eventos" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Banquetería V&O</td><td class="p-4 opacity-50 italic">Calidad superior / Gourmet</td><td class="p-4 text-center px-4"><a href="https://www.2x3.cl/profesional/banqueteria-v-o" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Rosa Ibar Banquetes</td><td class="p-4 opacity-50 italic">50 años de experiencia / Personalizado</td><td class="p-4 text-center px-4"><a href="https://www.matrimonios.cl/banquetes/santiago" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Pilar Chaigneau</td><td class="p-4 opacity-50 italic">Exclusividad / Gourmet</td><td class="p-4 text-center px-4"><a href="https://lareinadeldato.cl/..." target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Magdalena Vial</td><td class="p-4 opacity-50 italic">Banquetería de Autor</td><td class="p-4 text-center px-4"><a href="https://lareinadeldato.cl/..." target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
-                        <tr><td class="p-4 font-black uppercase italic">Gabriela Meza</td><td class="p-4 opacity-50 italic">Alta Banquetería</td><td class="p-4 text-center px-4"><a href="https://lareinadeldato.cl/..." target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td></tr>
+                        <tr><td class="p-4 font-black">Marie Gourmet</td><td class="p-4 opacity-50">Alta Gastronomía / Muy recomendada</td><td class="p-4 text-center px-4"><a href="https://www.mariegourmet.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Sofía Jottar</td><td class="p-4 opacity-50">Referente de lujo total en Chile</td><td class="p-4 text-center px-4"><a href="https://www.sofiajottar.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Amelia Correa</td><td class="p-4 opacity-50">Clásico de Providencia / Elegancia</td><td class="p-4 text-center px-4"><a href="https://www.ameliacorea.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Banquetería Eneldo</td><td class="p-4 opacity-50">Moderno / Estilo Urbano</td><td class="p-4 text-center px-4"><a href="https://www.eneldo.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Banquete Factory</td><td class="p-4 opacity-50">Gran Volumen / Flexibilidad</td><td class="p-4 text-center px-4"><a href="https://banquetefactory.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Banquetería y Catering</td><td class="p-4 opacity-50">Foco Corporativo & Boda</td><td class="p-4 text-center px-4"><a href="https://banqueteriaycatering.cl/" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Paolo Naranjo</td><td class="p-4 opacity-50">Rating 4.97 / Música + Menu</td><td class="p-4 text-center px-4"><a href="https://www.2x3.cl/profesional/paolo-naranjo" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Sumo Producciones</td><td class="p-4 opacity-50">Servicio integral / Proyectos</td><td class="p-4 text-center px-4"><a href="https://www.2x3.cl/profesional/sumo-producciones-3" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Guris Eventos</td><td class="p-4 opacity-50">Atención personalizada</td><td class="p-4 text-center px-4"><a href="https://www.2x3.cl/profesional/guris-eventos" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Banquetería V&O</td><td class="p-4 opacity-50">Calidad superior / Gourmet</td><td class="p-4 text-center px-4"><a href="https://www.2x3.cl/profesional/banqueteria-v-o" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Rosa Ibar Banquetes</td><td class="p-4 opacity-50">50 años de experiencia / Personalizado</td><td class="p-4 text-center px-4"><a href="https://www.matrimonios.cl/banquetes/santiago" target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Pilar Chaigneau</td><td class="p-4 opacity-50">Exclusividad / Gourmet</td><td class="p-4 text-center px-4"><a href="https://lareinadeldato.cl/..." target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Magdalena Vial</td><td class="p-4 opacity-50">Banquetería de Autor</td><td class="p-4 text-center px-4"><a href="https://lareinadeldato.cl/..." target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                        <tr><td class="p-4 font-black">Gabriela Meza</td><td class="p-4 opacity-50">Alta Banquetería</td><td class="p-4 text-center px-4"><a href="https://lareinadeldato.cl/..." target="_blank" class="bg-blue-50 text-blue-600 font-bold px-3 py-1 rounded">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -211,36 +191,36 @@
         <!-- 4. TRAJES FULL -->
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
-                <div class="bg-pink-600 px-6 py-3 text-white font-black text-xs uppercase tracking-widest text-center italic">👗 NOVIAS: INVENTARIO TOTAL</div>
+                <div class="bg-pink-600 px-6 py-3 text-white font-black text-xs uppercase tracking-widest">👗 NOVIAS: INVENTARIO TOTAL</div>
                 <div class="p-0 text-[10px]">
                     <table class="w-full border-collapse">
                         <tbody class="divide-y divide-gray-100">
-                            <tr><td class="p-4 font-black uppercase italic">Punto Clave Novias</td><td class="p-4 text-right"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Somos Novios Chile</td><td class="p-4 text-right"><a href="https://somosnovioschile.com/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Nevada Novias</td><td class="p-4 text-right"><a href="https://www.nevadanovias.com/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Novias de Blanco</td><td class="p-4 text-right"><a href="https://www.noviasdeblanco.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Sposa Novias</td><td class="p-4 text-right"><a href="https://www.sposa.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">La Casa Blanca</td><td class="p-4 text-right"><a href="https://www.lacasablanca.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Ignacia Novias</td><td class="p-4 text-right"><a href="https://www.ignacianovias.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Santo Encanto Novias</td><td class="p-4 text-right"><a href="https://santoencanto.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
+                            <tr><td class="p-4 font-black uppercase">Punto Clave Novias</td><td class="p-4 text-right"><a href="https://www.matrimonios.cl/..." target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Somos Novios Chile</td><td class="p-4 text-right"><a href="https://somosnovioschile.com/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Nevada Novias</td><td class="p-4 text-right"><a href="https://www.nevadanovias.com/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Novias de Blanco</td><td class="p-4 text-right"><a href="https://www.noviasdeblanco.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Sposa Novias</td><td class="p-4 text-right"><a href="https://www.sposa.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">La Casa Blanca</td><td class="p-4 text-right"><a href="https://www.lacasablanca.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Ignacia Novias</td><td class="p-4 text-right"><a href="https://www.ignacianovias.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Santo Encanto Novias</td><td class="p-4 text-right"><a href="https://santoencanto.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden">
-                <div class="bg-gray-800 px-6 py-3 text-white font-black text-xs uppercase tracking-widest text-center italic">🕴️ NOVIOS: SASTRERÍA ELITE TOTAL</div>
+                <div class="bg-gray-800 px-6 py-3 text-white font-black text-xs uppercase tracking-widest">🕴️ NOVIOS: SASTRERÍA ELITE TOTAL</div>
                 <div class="p-0 text-[10px]">
                     <table class="w-full border-collapse">
                         <tbody class="divide-y divide-gray-100">
-                            <tr><td class="p-4 font-black uppercase italic">Sastrería Mujica</td><td class="p-4 text-right"><a href="https://mujicasastreria.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Siro Sastrería</td><td class="p-4 text-right"><a href="https://sirosastreria.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Thomas J. Fiedler</td><td class="p-4 text-right"><a href="https://thomasfiedler.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Sastrería Cubillos</td><td class="p-4 text-right"><a href="https://www.cubillos.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Sastrería J.R.</td><td class="p-4 text-right"><a href="https://www.sastreriajr.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Soberano Sastrería</td><td class="p-4 text-right"><a href="https://www.soberano.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Kamal Style</td><td class="p-4 text-right"><a href="https://www.instagram.com/kamalstyle_/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Sastrería CSD</td><td class="p-4 text-right"><a href="https://www.zankyou.cl/tiendas-novio-matrimonios/santiago-metropolitan-region" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
-                            <tr><td class="p-4 font-black uppercase italic">Justo Sastrería</td><td class="p-4 text-right"><a href="https://haymatrimonio.cl/novios/trajes-novio" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td></tr>
+                            <tr><td class="p-4 font-black uppercase">Sastrería Mujica</td><td class="p-4 text-right"><a href="https://mujicasastreria.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Siro Sastrería</td><td class="p-4 text-right"><a href="https://sirosastreria.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Thomas J. Fiedler</td><td class="p-4 text-right"><a href="https://thomasfiedler.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Sastrería Cubillos</td><td class="p-4 text-right"><a href="https://www.cubillos.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Sastrería J.R.</td><td class="p-4 text-right"><a href="https://www.sastreriajr.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Soberano Sastrería</td><td class="p-4 text-right"><a href="https://www.soberano.cl/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Kamal Style</td><td class="p-4 text-right"><a href="https://www.instagram.com/kamalstyle_/" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Sastrería CSD</td><td class="p-4 text-right"><a href="https://www.zankyou.cl/tiendas-novio-matrimonios/santiago-metropolitan-region" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                            <tr><td class="p-4 font-black uppercase">Justo Sastrería</td><td class="p-4 text-right"><a href="https://haymatrimonio.cl/novios/trajes-novio" target="_blank" class="text-blue-600 font-bold underline italic uppercase">VISITAR</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -249,25 +229,25 @@
 
         <!-- 5. ENTRETENIMIENTO FULL -->
         <section class="bg-white rounded shadow-sm border border-gray-200 overflow-hidden text-xs">
-            <div class="bg-purple-800 px-6 py-3 text-white font-black text-xs uppercase tracking-widest italic text-center italic text-center">🎸 ENTRETENIMIENTO & SHOWS COMPLETO</div>
+            <div class="bg-purple-800 px-6 py-3 text-white font-black text-xs uppercase tracking-widest italic">🎸 ENTRETENIMIENTO & SHOWS COMPLETO</div>
             <table class="w-full">
                 <tbody class="divide-y divide-gray-100">
-                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Banda Conmoción</td><td class="p-4 opacity-50 italic">Carnaval chileno premium</td><td class="p-4 text-right"><a href="https://bandaconmocion.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td></tr>
-                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Xquisito Sound</td><td class="p-4 opacity-50 italic">DJs y Sonido Pro</td><td class="p-4 text-right"><a href="https://www.leadslend.com/..." target="_blank" class="text-blue-600 font-black italic">WEB</a></td></tr>
-                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Eventos Black Stage</td><td class="p-4 opacity-50 italic">Show LED y Robot</td><td class="p-4 text-right"><a href="https://blackstage.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td></tr>
-                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Booth Chile</td><td class="p-4 opacity-50 italic">Cabinas fotográficas</td><td class="p-4 text-right"><a href="https://www.boothchile.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td></tr>
-                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Fever Santiago</td><td class="p-4 opacity-50 italic">Experiencias Inmersivas</td><td class="p-4 text-right"><a href="https://feverup.com/..." target="_blank" class="text-blue-600 font-black italic">WEB</a></td></tr>
-                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Mago Alex Betancourt</td><td class="p-4 opacity-50 italic">Ilusionismo & Aparición Novios</td><td class="p-4 text-right"><a href="https://www.shows.cl/shows/show-para-matrimonios.php" target="_blank" class="text-blue-600 font-black italic">WEB</a></td></tr>
-                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Batucada Brashow</td><td class="p-4 opacity-50 italic">Show Brasilero / Garotas / Samba</td><td class="p-4 text-right"><a href="https://www.brashow.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td></tr>
-                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Stellar Eventos MirrorMan</td><td class="p-4 opacity-50 italic">Show de espejos / Pirotecnia Fría</td><td class="p-4 text-right"><a href="https://www.stellareventos.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td></tr>
+                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Banda Conmoción</td><td class="p-4 opacity-50 italic">Carnaval chileno premium</td><td class="p-4 text-right"><a href="https://bandaconmocion.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Xquisito Sound</td><td class="p-4 opacity-50 italic">DJs y Sonido Pro</td><td class="p-4 text-right"><a href="https://www.leadslend.com/..." target="_blank" class="text-blue-600 font-black italic">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Eventos Black Stage</td><td class="p-4 opacity-50 italic">Show LED y Robot</td><td class="p-4 text-right"><a href="https://blackstage.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Booth Chile</td><td class="p-4 opacity-50 italic">Cabinas fotográficas</td><td class="p-4 text-right"><a href="https://www.boothchile.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Fever Santiago</td><td class="p-4 opacity-50 italic">Experiencias Inmersivas</td><td class="p-4 text-right"><a href="https://feverup.com/..." target="_blank" class="text-blue-600 font-black italic">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Mago Alex Betancourt</td><td class="p-4 opacity-50 italic">Ilusionismo & Aparición Novios</td><td class="p-4 text-right"><a href="https://www.shows.cl/shows/show-para-matrimonios.php" target="_blank" class="text-blue-600 font-black italic">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Batucada Brashow</td><td class="p-4 opacity-50 italic">Show Brasilero / Garotas / Samba</td><td class="p-4 text-right"><a href="https://www.brashow.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
+                    <tr><td class="p-4 font-bold uppercase italic tracking-tighter">Stellar Eventos MirrorMan</td><td class="p-4 opacity-50 italic">Show de espejos / Pirotecnia Fría</td><td class="p-4 text-right"><a href="https://www.stellareventos.cl/" target="_blank" class="text-blue-600 font-black italic">WEB</a></td><td class="p-4 text-center font-bold text-gray-400 italic">PENDIENTE</td></tr>
                 </tbody>
             </table>
         </section>
 
     </main>
 
-    <footer class="py-10 text-center text-gray-400 text-[10px] uppercase font-bold tracking-[0.2em] border-t mt-16 bg-gray-50/50 italic font-bold">
-        Operación "Sí, Acepto" | El War Room Unificado Luciano v6.0 (PROTEGIDO 🦝)
+    <footer class="py-10 text-center text-gray-400 text-[10px] uppercase font-bold tracking-[0.2em] border-t mt-16 bg-gray-50/50 italic">
+        Operación "Sí, Acepto" | El War Room Unificado Luciano v4.6 (INTEGRAL DATA DAILY)
     </footer>
 
 </body>
